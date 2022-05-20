@@ -1,4 +1,4 @@
-#include "Vector.h"
+#include "../Headers/Vector.h"
 
 Vector::Vector() : _x(0), _y(0) {}
 Vector::Vector(float x, float y) : _x(x), _y(y) {}
@@ -9,6 +9,7 @@ Vector Vector::RIGHT = Vector(1, 0);
 Vector Vector::DOWN = Vector(0, 1);
 Vector Vector::LEFT = Vector(-1, 0);
 
+// check
 float Vector::Length()
 {
 	return sqrt(pow(_x, 2) + pow(_y, 2));
